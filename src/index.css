@@ -9,7 +9,7 @@
   }
 
   body{
-    background-color: #4a154b;
+    background-image: url("C:/apeksha/csuf/myportfolio/src/assets/a.jpg");
   }
 
   h1,h4,p,a{
@@ -28,12 +28,15 @@
     background-color: rgb(248,217,15);
     color:black;
     border:1px solid #fff;
+    border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
   }
 
   .btn:hover{
-    background-color: rosybrown;
+    background-color: rgb(178, 81, 118);
+    transform: translateY(2px);
     color: #fff;
     transition: 0.3s;
+    
   }
