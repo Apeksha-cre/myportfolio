@@ -1,21 +1,26 @@
 import "./MainPageImgStyle.css";
 import backimg from "../assets/b.jpg"
+import resume from "../assets/Resume.pdf"
 import React from 'react'
-import { Link } from "react-router-dom";
+import {FaDownload}from "react-icons/fa";
 
 const MainPageImg = () => {
   return (
     <div className="mainpage">
         <div className="backimg">
            <img className="back-img" src={backimg} alt="backimg"/> 
-        </div>
+           </div> 
+        
         <div className="content">
           <p>This is Apeksha Shah</p>
           <h1>Developer</h1>
           <div>
-          <Link to="/project" className="btn" >PROJETS</Link>
+          <a href = {resume} download="Apeksha_CV" className="btn">Download Resume 
+          <FaDownload className="downloadimg"/>
+          </a>
           </div>
         </div>
+       
     </div>
   );
 };
